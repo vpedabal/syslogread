@@ -1,0 +1,21 @@
+This is a sample framework for developing test applications in linux. 
+The Intel C/CPP Compiler is used for building test code.
+The directory structure is as follows:
+
+Prior to building there are only two subdirectories present:
+1. src
+2. inc
+
+All the source files are expected to be saved at src/, and all the header
+files to be saved at inc/
+
+Post building, two new folders are created:
+3. obj
+4. bin
+
+All the intermediary object files are expected to be saved in the obj/ directory
+, while the final binary/executable is expected to be located at the bin/ 
+directory. These two folders will be destroyed upon running 'make clean'.
+
+Currently the makefile supports only C files, but can easily be modified to CPP by changing the search for source files from *.c to *.cpp
+ 
